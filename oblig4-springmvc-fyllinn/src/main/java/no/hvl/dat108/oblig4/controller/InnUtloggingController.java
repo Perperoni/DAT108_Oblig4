@@ -1,13 +1,16 @@
 package no.hvl.dat108.oblig4.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import no.hvl.dat108.oblig4.model.Deltager;
 import no.hvl.dat108.oblig4.model.Feilmeldinger;
 import no.hvl.dat108.oblig4.service.DeltagerDbService;
 import no.hvl.dat108.oblig4.service.LogginnService;
 import no.hvl.dat108.oblig4.service.PassordService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -18,10 +21,11 @@ public class InnUtloggingController {
 	 * GET /innlogging - Viser innloggingsskjemaet vhja logginn-viewet.
 	 */
     //TODO - Annoteringen for å ta i mot requesten
+	@GetMapping(value = "/innlogging")
 	public String henteSkjema() {
 
         //TODO - Skriv innholdet i denne metoden.
-        return "";
+        return "logginn";
 	}
 
 	/*
@@ -35,7 +39,8 @@ public class InnUtloggingController {
     //TODO - Annoteringen for å ta i mot requesten
 	public String loggeInn(@RequestParam String mobil, @RequestParam String passord, 
 			HttpServletRequest request, RedirectAttributes ra) {
-
+		HttpSession session = request.getSession();
+		session.setAttribute("brukarMob", mobil);
         //TODO - Skriv innholdet i denne metoden.
         return "";
 	}

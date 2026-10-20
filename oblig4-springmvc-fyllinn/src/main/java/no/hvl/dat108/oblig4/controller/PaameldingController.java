@@ -13,6 +13,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -22,10 +23,11 @@ public class PaameldingController {
 	 * GET /paamelding - Viser påmeldingsskjema vhja av aktuelt view
 	 */
     //TODO - Annoteringen for å ta i mot requesten
+	@GetMapping(value = "/paamelding")
     public String henteSkjema() {
 
         //TODO - Skriv innholdet i denne metoden.
-        return "";
+        return "paameldingsskjema";
     }
     
 	/*
