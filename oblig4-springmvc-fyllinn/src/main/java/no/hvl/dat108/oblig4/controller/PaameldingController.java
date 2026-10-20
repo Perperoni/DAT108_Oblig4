@@ -38,16 +38,22 @@ public class PaameldingController {
 	 *  - Går (redirecter) til påmeldingsbekreftelse
 	 */
     //TODO - Annoteringen for å ta i mot requesten
+	@PostMapping(value = "/paamelding")
     public String meldePaa(HttpServletRequest request, 
     		@Valid @ModelAttribute("deltager") DeltagerSkjema skjema,
-			BindingResult bindingResult) {
+			BindingResult bindingResult,RedirectAttributes ra) {
 
     	/* For å gjøre controller-metoden kortere, kan selve valideringen
     	 * skilles ut i en egen hjelpemetode (se nederst). Denne returnerer en
     	 * feilmelding om noe er galt, og null hvis alt er OK. */
     	String feilmelding = meldingFraInputValidering(skjema, bindingResult);
+		if (feilmelding != null) {
+			ra.addFlashAttribute("redirectMelding", feilmelding);
+			return "redirect:paamelding";
+		}
 
         //TODO - Skriv resten av innholdet i denne metoden.
+
         return "";
     }
 

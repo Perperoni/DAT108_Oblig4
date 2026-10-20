@@ -39,8 +39,6 @@ public class InnUtloggingController {
     //TODO - Annoteringen for å ta i mot requesten
 	public String loggeInn(@RequestParam String mobil, @RequestParam String passord, 
 			HttpServletRequest request, RedirectAttributes ra) {
-		HttpSession session = request.getSession();
-		session.setAttribute("brukarMob", mobil);
         //TODO - Skriv innholdet i denne metoden.
         return "";
 	}

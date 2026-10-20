@@ -4,6 +4,7 @@ import no.hvl.dat108.oblig4.model.Deltager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class DeltagerDbService {
 
@@ -20,8 +21,8 @@ public class DeltagerDbService {
      */
     public static Deltager finnDeltagerMedMobil(String mobil) {
 
-        //TODO - Skriv denne metoden. Bruk streams!
-        return null;
+        Deltager deltager = deltagerliste.stream().filter(d -> d.getMobil().equals(mobil)).findFirst().orElse(null);
+        return deltager;
     }
 
     /**
@@ -29,8 +30,8 @@ public class DeltagerDbService {
      */
     public static List<Deltager> finnAlleSortertPaaFulltNavn() {
 
-        //TODO - Skriv denne metoden. Bruk streams!
-        return null;
+        List<Deltager> list = deltagerliste.stream().sorted((a,b) -> a.getFulltNavn().compareTo(b.getFulltNavn())).toList();
+        return list;
     }
 
     /**
@@ -38,9 +39,7 @@ public class DeltagerDbService {
      * @return Om deltager med gitt mobil er påmeldt
      */
     public static boolean erDeltagerPaameldt(String mobil) {
-
-        //TODO - Skriv denne metoden.
-        return false;
+        return deltagerliste.stream().anyMatch(d -> d.getMobil().equals(mobil));
     }
 
     /**
