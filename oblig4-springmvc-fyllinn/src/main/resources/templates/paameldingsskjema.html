@@ -11,6 +11,20 @@
     <!-- TODO - Eventuell feilmelding med rød tekst -->
 
     <!-- TODO - Påmeldingsskjemaet -->
+	<fieldset>
+		<form action="paamelding" method="get">
+			<label for="fornavn">Fornavn: </label><input type="text" name="fornavn" th:value="${person?.fornavn}"><br>
+			<label for="etternavn">Etternavn: </label><input type="text" name="etternavn" th:value="${person?.etternavn}"><br>
+			<label for="mobil">Mobil: </label><input type="text" name="mobil" th:value="${person?.mobil}"><br>
+			<label for="passord"> Passord: </label><input type="password" name="password" th:value="${person?.password}"><br>
+			<label for="gjentapassord"> Gjenta Passord: </label><input type="password" name="gjentapassword" th:value="${person?.password}"><br>
+			<label style="white-space: nowrap" for="kjonn"> Kjønn:<br>
+			 Mann<input type="radio" name="kjonn" th:value="${person?.mann}" >    Kvinne<input type="radio" name="kjonn" th:value="${person?.kvinne}"><br>
+			</label>
+			<input type="submit" value="Logg inn!"/>
+
+		</form>
+	</fieldset>
 
 </body>
 </html>
