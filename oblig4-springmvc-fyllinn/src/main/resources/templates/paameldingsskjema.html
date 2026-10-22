@@ -8,23 +8,41 @@
 <body>
 	<h2>Påmelding</h2>
 
-    <!-- TODO - Eventuell feilmelding med rød tekst -->
+	<p th:if="${redirectMelding}" style="color: red;" th:text="${redirectMelding}"></p>
 
-    <!-- TODO - Påmeldingsskjemaet -->
 	<fieldset>
-		<form action="paamelding" method="get">
-			<label for="fornavn">Fornavn: </label><input type="text" name="fornavn" th:value="${person?.fornavn}"><br>
-			<label for="etternavn">Etternavn: </label><input type="text" name="etternavn" th:value="${person?.etternavn}"><br>
-			<label for="mobil">Mobil: </label><input type="text" name="mobil" th:value="${person?.mobil}"><br>
-			<label for="passord"> Passord: </label><input type="password" name="password" th:value="${person?.password}"><br>
-			<label for="gjentapassord"> Gjenta Passord: </label><input type="password" name="gjentapassword" th:value="${person?.password}"><br>
-			<label style="white-space: nowrap" for="kjonn"> Kjønn:<br>
-			 Mann<input type="radio" name="kjonn" th:value="${person?.mann}" >    Kvinne<input type="radio" name="kjonn" th:value="${person?.kvinne}"><br>
-			</label>
-			<input type="submit" value="Logg inn!"/>
+		<form action="@{/paamelding}" method="post">
+			<label for="fornavn">Fornavn: </label>
+				<input type="text" name="fornavn" th:value="${skjema?.fornavn}"><br>
 
+			<label for="etternavn">Etternavn: </label>
+				<input type="text" name="etternavn" th:value="${skjema?.etternavn}"><br>
+
+			<label for="mobil">Mobil: </label>
+				<input type="text" name="mobil" th:value="${skjema?.mobil}"><br>
+
+			<label for="passord"> Passord: </label>
+				<input type="password" name="password" th:value="${skjema?.password}"><br>
+
+			<label for="gjentapassord"> Gjenta Passord: </label>
+				<input type="password" name="gjentapassword" th:value="${skjema?.password}"><br>
+
+			<label style="white-space: nowrap" for="kjonn"> Kjønn:<br>
+			 	Mann<input type="radio" name="kjonn" th:value="${skjema?.kjonn != 'kvinne'}" >
+				Kvinne<input type="radio" name="kjonn" th:value="${skjema?.kjonn != 'mann'}"><br>
+			</label>
+				<input type="submit" value="Meld meg på!"/>
 		</form>
 	</fieldset>
+	<script>
+		const pw = document.getElementById('passord');
+		const gjpw = document.getElementById('gjentapassord');
+		function skjekkLike(){
+			gjpw.setCustomValidity(pw.value === gjpw.value ? "" : "Må vere like");
+		}
+		pw.addEventListener('input', skjekkLike);
+		gjpw.addEventListener('input', skjekkLike);
+	</script>
 
 </body>
 </html>

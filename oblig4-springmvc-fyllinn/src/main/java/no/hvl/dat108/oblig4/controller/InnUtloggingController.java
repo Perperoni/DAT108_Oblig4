@@ -20,11 +20,8 @@ public class InnUtloggingController {
 	/*
 	 * GET /innlogging - Viser innloggingsskjemaet vhja logginn-viewet.
 	 */
-    //TODO - Annoteringen for å ta i mot requesten
 	@GetMapping(value = "/innlogging")
 	public String henteSkjema() {
-
-        //TODO - Skriv innholdet i denne metoden.
         return "logginn";
 	}
 
@@ -36,11 +33,17 @@ public class InnUtloggingController {
 	 * Hvis ugyldig brukernavn og/eller passord, skal det gjøres er redirect
 	 * til /innlogging med en feilmelding satt som en flash-attributt.
 	 */
-    //TODO - Annoteringen for å ta i mot requesten
+	@PostMapping("/innlogging")
 	public String loggeInn(@RequestParam String mobil, @RequestParam String passord, 
 			HttpServletRequest request, RedirectAttributes ra) {
-        //TODO - Skriv innholdet i denne metoden.
-        return "";
+		Deltager deltager = DeltagerDbService.finnDeltagerMedMobil(mobil);
+		if (deltager == null
+			|| !PassordService.erPassordKorrekt(passord, deltager.getHashetPassord())){
+			ra.addFlashAttribute("redirectMelding", Feilmeldinger.UGYLDIG_BRUKERNAVN_PASSORD_MLD);
+			return "redirect:innlogging";
+		}
+		LogginnService.loggInnBruker(request, deltager);
+		return "refirect:deltagerliste";
 	}
 
 	/*
@@ -48,11 +51,11 @@ public class InnUtloggingController {
 	 * - Logger ut 
 	 * - Går (redirecter) til innlogging
 	 */
-    //TODO - Annoteringen for å ta i mot requesten
+    @PostMapping("/utlogging")
 	public String loggeUt(HttpServletRequest request, RedirectAttributes ra) {
-
-        //TODO - Skriv innholdet i denne metoden.
-        return "";
+		LogginnService.loggUtBruker(request);
+		ra.addFlashAttribute("redirectMelding", Feilmeldinger.UTLOGGET_MLD);
+		return "redirect:innlogging";
 	}
 
 }

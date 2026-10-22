@@ -30,22 +30,27 @@ public class DeltagerSkjema {
     public static final String ONE_TO_19_TIMES = "{1,19}";
     public static final String EIGHT_TIMES = "{8}";
 
-    //TODO - Annotér med valideringsregler /-krav
+    @NotNull(message = Feilmeldinger.UGYLDIG_FORNAVN_MLD)
+	@Pattern(regexp =  "^[A-ZÆØÅ][a-zA-ZæøåÆØÅ -]{1,19}$", message = Feilmeldinger.UGYLDIG_FORNAVN_MLD)
 	private String fornavn;
 
-    //TODO - Annotér med valideringsregler /-krav
+	@NotNull(message = Feilmeldinger.UGYLDIG_ETTERNAVN_MLD)
+	@Pattern(regexp =  "^[A-ZÆØÅ][a-zA-ZæøåÆØÅ -]{1,19}$", message =  Feilmeldinger.UGYLDIG_ETTERNAVN_MLD)
 	private String etternavn;
 
-    //TODO - Annotér med valideringsregler /-krav
+	@NotNull(message = Feilmeldinger.UGYLDIG_MOBIL_MLD)
+	@Pattern(regexp = "^[0-9]{8}$", message = Feilmeldinger.UGYLDIG_MOBIL_MLD)
 	private String mobil;
 
-    //TODO - Annotér med valideringsregler /-krav
+	@NotNull(message = Feilmeldinger.UGYLDIG_PASSORD_MLD)
+	@Size(min = 4, max = 64, message = Feilmeldinger.UGYLDIG_PASSORD_MLD)
 	private String passord;
     
     //Denne valideres programmatisk i PaameldingController
 	private String passordRepetert;
 
-    //TODO - Annotér med valideringsregler /-krav
+	@NotNull(message = Feilmeldinger.UGYLDIG_KJONN_MLD)
+	@Pattern(regexp = "^(mann|kvinne)$", message = Feilmeldinger.UGYLDIG_KJONN_MLD)
 	private String kjonn;
 	
 	//---

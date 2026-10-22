@@ -47,7 +47,6 @@ public class DeltagerDbService {
      * @param deltager
      */
     public static void lagreDeltager(Deltager deltager) {
-
-        //TODO - Skriv denne metoden.
+        deltagerliste.add(deltager);
     }
 }

@@ -22,11 +22,8 @@ public class PaameldingController {
 	/*
 	 * GET /paamelding - Viser påmeldingsskjema vhja av aktuelt view
 	 */
-    //TODO - Annoteringen for å ta i mot requesten
 	@GetMapping(value = "/paamelding")
     public String henteSkjema() {
-
-        //TODO - Skriv innholdet i denne metoden.
         return "paameldingsskjema";
     }
     
@@ -37,7 +34,6 @@ public class PaameldingController {
 	 *  - Logger inn
 	 *  - Går (redirecter) til påmeldingsbekreftelse
 	 */
-    //TODO - Annoteringen for å ta i mot requesten
 	@PostMapping(value = "/paamelding")
     public String meldePaa(HttpServletRequest request, 
     		@Valid @ModelAttribute("deltager") DeltagerSkjema skjema,
@@ -48,13 +44,20 @@ public class PaameldingController {
     	 * feilmelding om noe er galt, og null hvis alt er OK. */
     	String feilmelding = meldingFraInputValidering(skjema, bindingResult);
 		if (feilmelding != null) {
+			skjema.setPassord(null);
+			skjema.setPassordRepetert(null);
 			ra.addFlashAttribute("redirectMelding", feilmelding);
+			ra.addFlashAttribute("skjema", skjema);
 			return "redirect:paamelding";
 		}
 
-        //TODO - Skriv resten av innholdet i denne metoden.
+		String hashetPassord = PassordService.lagHashetPassord(skjema.getPassord());
+		Deltager deltager = skjema.lagDeltager(hashetPassord);
 
-        return "";
+		DeltagerDbService.lagreDeltager(deltager);
+		LogginnService.loggInnBruker(request, deltager);
+
+		return "redirect:paameldt";
     }
 
 	/*
@@ -64,11 +67,13 @@ public class PaameldingController {
      * Hvis ikke bruker er innlogget, skal det gjøres er redirect til /innlogging
      * med en feilmelding satt som en flash-attributt.
      */
-    //TODO - Annoteringen for å ta i mot requesten
+    @GetMapping("/paameldt")
     public String hentePaameldt(HttpServletRequest request, RedirectAttributes ra) {
-
-        //TODO - Skriv innholdet i denne metoden.
-        return "";
+		if(!LogginnService.erBrukerLoggetInn(request)) {
+			ra.addFlashAttribute("redirectMelding", Feilmeldinger.KREVER_INNLOGGET_MLD);
+			return "redirect:innlogging";
+		}
+		return "paameldingsbekreftelse";
     }
     
 	/*
