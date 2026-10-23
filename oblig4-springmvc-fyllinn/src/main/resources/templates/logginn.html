@@ -12,7 +12,7 @@
 
     <!-- TODO - Innloggingsskjemaet -->
 	<fieldset>
-	<form action="loginn" method="post">
+	<form th:action="@{/loginn}" method="post">
 
 		<label for="mobil">Mobil: </label><input type="text" name="mobil" th:value="${person?.mobil}"><br>
 		<label for="passord"> Passord: </label><input type="password" name="password" th:value="${person?.password}"><br>

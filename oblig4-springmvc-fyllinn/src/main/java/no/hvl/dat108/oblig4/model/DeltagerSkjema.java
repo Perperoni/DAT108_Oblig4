@@ -35,7 +35,7 @@ public class DeltagerSkjema {
 	private String fornavn;
 
 	@NotNull(message = Feilmeldinger.UGYLDIG_ETTERNAVN_MLD)
-	@Pattern(regexp =  "^[A-ZÆØÅ][a-zA-ZæøåÆØÅ -]{1,19}$", message =  Feilmeldinger.UGYLDIG_ETTERNAVN_MLD)
+	@Pattern(regexp =  "^[A-ZÆØÅ][a-zA-ZæøåÆØÅ-]{1,19}$", message =  Feilmeldinger.UGYLDIG_ETTERNAVN_MLD)
 	private String etternavn;
 
 	@NotNull(message = Feilmeldinger.UGYLDIG_MOBIL_MLD)
