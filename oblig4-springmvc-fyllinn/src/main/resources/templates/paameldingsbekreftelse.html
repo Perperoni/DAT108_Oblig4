@@ -9,9 +9,16 @@
 	<h2>Påmeldingsbekreftelse</h2>
 	<p>Påmeldingen er mottatt for</p>
 
-    <!-- TODO - Kvitteringen for påmeldt -->
+	<p>
+		<span th:text="${session.deltager.fornavn}"></span><br>
+		<span th:text="${session.deltager.etternavn}"></span><br>
+		<span th:text="${session.deltager.mobil}"></span><br>
+		<span th:text="${session.deltager.kjonn}"></span><br>
+	</p>
+
 
     <!-- TODO - Lenke til deltagerlisten -->
+	<p><a th:href="@{deltagerliste}">Gå til deltagerlisten</a></p>
 
 </body>
 </html>

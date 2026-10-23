@@ -48,7 +48,7 @@ public class PaameldingController {
 			skjema.setPassordRepetert(null);
 			ra.addFlashAttribute("redirectMelding", feilmelding);
 			ra.addFlashAttribute("skjema", skjema);
-			return "redirect:paamelding";
+			return "redirect:/paamelding";
 		}
 
 		String hashetPassord = PassordService.lagHashetPassord(skjema.getPassord());
@@ -57,7 +57,7 @@ public class PaameldingController {
 		DeltagerDbService.lagreDeltager(deltager);
 		LogginnService.loggInnBruker(request, deltager);
 
-		return "redirect:paameldt";
+		return "redirect:/paameldt";
     }
 
 	/*
@@ -71,7 +71,7 @@ public class PaameldingController {
     public String hentePaameldt(HttpServletRequest request, RedirectAttributes ra) {
 		if(!LogginnService.erBrukerLoggetInn(request)) {
 			ra.addFlashAttribute("redirectMelding", Feilmeldinger.KREVER_INNLOGGET_MLD);
-			return "redirect:innlogging";
+			return "redirect:/innlogging";
 		}
 		return "paameldingsbekreftelse";
     }

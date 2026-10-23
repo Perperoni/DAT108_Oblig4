@@ -40,10 +40,10 @@ public class InnUtloggingController {
 		if (deltager == null
 			|| !PassordService.erPassordKorrekt(passord, deltager.getHashetPassord())){
 			ra.addFlashAttribute("redirectMelding", Feilmeldinger.UGYLDIG_BRUKERNAVN_PASSORD_MLD);
-			return "redirect:innlogging";
+			return "redirect:/innlogging";
 		}
 		LogginnService.loggInnBruker(request, deltager);
-		return "refirect:deltagerliste";
+		return "redirect:/deltagerliste";
 	}
 
 	/*
@@ -55,7 +55,7 @@ public class InnUtloggingController {
 	public String loggeUt(HttpServletRequest request, RedirectAttributes ra) {
 		LogginnService.loggUtBruker(request);
 		ra.addFlashAttribute("redirectMelding", Feilmeldinger.UTLOGGET_MLD);
-		return "redirect:innlogging";
+		return "redirect:/innlogging";
 	}
 
 }

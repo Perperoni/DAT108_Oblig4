@@ -30,7 +30,7 @@ public class DeltagerlisteController {
 									 RedirectAttributes ra) {
 		if(!LogginnService.erBrukerLoggetInn(request)) {
 			ra.addFlashAttribute("redirectMelding", Feilmeldinger.KREVER_INNLOGGET_MLD);
-			return "redirect:innlogging";
+			return "redirect:/innlogging";
 		}
 		List<Deltager> deltagere = new ArrayList<>(DeltagerDbService.finnAlleSortertPaaFulltNavn());
 		model.addAttribute("deltagere", deltagere);
