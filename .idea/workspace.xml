@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7eab48eb-cce4-4d1c-871a-6dcd6efd98f9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000000182" />
+      <entry key="S30" value="1.000046217034214" />
+      <entry key="S60" value="1.0152309296806108" />
+      <entry key="M2" value="1.3317787644138739" />
+      <entry key="M5" value="3.9522111466618832" />
+      <entry key="M10" value="9.275581765900512" />
+      <entry key="M15" value="13.936708332726091" />
+      <entry key="M30" value="23.244528620031378" />
+      <entry key="H1" value="31.641464178542016" />
+      <entry key="H2" value="37.511813091478295" />
+      <entry key="H4" value="41.02275329911799" />
+      <entry key="D1" value="44.30167174754053" />
+      <entry key="W1" value="44.8993270476461" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="9.633038609498165E-56" />
+      <entry key="MS500" value="1.095869442344475E-11" />
+      <entry key="S2" value="0.0027831617023933793" />
+      <entry key="S5" value="0.1430521786915931" />
+      <entry key="S10" value="0.5530659554232762" />
+      <entry key="S30" value="1.6248759178652419" />
+      <entry key="S60" value="2.4011987198597424" />
+      <entry key="M2" value="3.3655174313648426" />
+      <entry key="M5" value="6.840384667585632" />
+      <entry key="M10" value="12.660194128385559" />
+      <entry key="M15" value="17.04595280360714" />
+      <entry key="M30" value="24.793153956910828" />
+      <entry key="H1" value="31.220506719048107" />
+      <entry key="H2" value="35.56103703064848" />
+      <entry key="H4" value="38.12140792377127" />
+      <entry key="D1" value="40.49593935235372" />
+      <entry key="W1" value="40.9273649854172" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.7526233737055336" />
+      <entry key="MS500" value="0.9447470409985417" />
+      <entry key="S2" value="0.9876357702874646" />
+      <entry key="S5" value="1.1136316284236585" />
+      <entry key="S10" value="1.4987302449406044" />
+      <entry key="S30" value="2.553268913015224" />
+      <entry key="S60" value="3.356675400546427" />
+      <entry key="M2" value="4.649981615235241" />
+      <entry key="M5" value="10.737313139369956" />
+      <entry key="M10" value="21.868891618306744" />
+      <entry key="M15" value="30.913379704941377" />
+      <entry key="M30" value="47.97537064007099" />
+      <entry key="H1" value="62.81681182960843" />
+      <entry key="H2" value="73.0450359250362" />
+      <entry key="H4" value="79.12863333490242" />
+      <entry key="D1" value="84.79476535405647" />
+      <entry key="W1" value="85.82627871030769" />
+    </decayedShown>
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.deltagerliste.html.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "Spring Boot.Oblig4App.executor": "Coverage",
+    "Spring Boot.SpringBootApp.executor": "Run",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="oblig4-springmvc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="oblig4-springmvc" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="oblig4-springmvc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringBootApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
+      <module name="oblig4-springmvc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="no.hvl.dat108.oblig4.Oblig4App" />
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" url="http://localhost:8080/" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="oblig4-springmvc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DAT108_Oblig4$Oblig4App.ic" NAME="Oblig4App Coverage Results" MODIFIED="1792752908758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>no.hvl.dat108.oblig4.*</FILTER>
+    </SUITE>
+  </component>
+</project>
