@@ -8,15 +8,17 @@
 <body>
 	<h2>Logg inn</h2>
 
-    <!-- TODO - Eventuell feilmelding med rød tekst -->
 
-    <!-- TODO - Innloggingsskjemaet -->
+	<p th:if="${redirectMelding}" style="color: red;" th:text="${redirectMelding}"></p>
+	
 	<fieldset>
-	<form th:action="@{/loginn}" method="post">
+	<form th:action="@{/innlogging}" method="post">
 
-		<label for="mobil">Mobil: </label><input type="text" name="mobil" th:value="${person?.mobil}"><br>
-		<label for="passord"> Passord: </label><input type="password" name="password" th:value="${person?.password}"><br>
-		<input type="submit" value="Logg inn!"/>
+		<label for="mobil">Mobil:</label>
+		<input type="text" id="mobil" name="mobil" required><br>
+		<label for="passord">Passord:</label>
+		<input type="password" id="passord" name="passord" required><br><br>
+		<input type="submit" value="Logg inn">
 
 	</form>
 	</fieldset>
