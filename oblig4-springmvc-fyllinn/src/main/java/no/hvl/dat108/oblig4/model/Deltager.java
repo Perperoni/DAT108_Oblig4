@@ -35,7 +35,7 @@ public class Deltager {
     @Column(length = 40)
     private String etternavn;
 
-    @Column(length = 40)
+    @Column(length = 6)
     private String kjonn;
     
     //---
