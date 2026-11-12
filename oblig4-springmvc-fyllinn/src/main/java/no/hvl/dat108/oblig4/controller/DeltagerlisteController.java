@@ -16,6 +16,12 @@ import java.util.List;
 
 @Controller
 public class DeltagerlisteController {
+
+    private final DeltagerDbService deltagerDbService;
+
+    public DeltagerlisteController(DeltagerDbService deltagerDbService) {
+        this.deltagerDbService = deltagerDbService;
+    }
 	
 	/**
 	 * GET /deltagerliste - Henter deltagerlisten og spiller ballen videre til
@@ -32,7 +38,7 @@ public class DeltagerlisteController {
 			ra.addFlashAttribute("redirectMelding", Feilmeldinger.KREVER_INNLOGGET_MLD);
 			return "redirect:/innlogging";
 		}
-		List<Deltager> deltagere = new ArrayList<>(DeltagerDbService.finnAlleSortertPaaFulltNavn());
+		List<Deltager> deltagere = new ArrayList<>(deltagerDbService.finnAlleSortertPaaFulltNavn());
 		model.addAttribute("deltagere", deltagere);
 		return "deltagerliste";
     }

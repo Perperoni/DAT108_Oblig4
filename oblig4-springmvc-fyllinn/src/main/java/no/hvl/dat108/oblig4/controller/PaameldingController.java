@@ -18,6 +18,12 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class PaameldingController {
+
+    private final DeltagerDbService deltagerDbService;
+
+    public PaameldingController(DeltagerDbService deltagerDbService) {
+        this.deltagerDbService = deltagerDbService;
+    }
 	
 	/*
 	 * GET /paamelding - Viser påmeldingsskjema vhja av aktuelt view
@@ -54,7 +60,7 @@ public class PaameldingController {
 		String hashetPassord = PassordService.lagHashetPassord(skjema.getPassord());
 		Deltager deltager = skjema.lagDeltager(hashetPassord);
 
-		DeltagerDbService.lagreDeltager(deltager);
+		deltagerDbService.lagreDeltager(deltager);
 		LogginnService.loggInnBruker(request, deltager);
 
 		return "redirect:/paameldt";
@@ -96,7 +102,7 @@ public class PaameldingController {
     	} else if (!skjema.getPassord().equals(skjema.getPassordRepetert())) {
     		melding = Feilmeldinger.FEIL_REPETERT_PASSORD_MLD;
     		
-    	} else if (DeltagerDbService.erDeltagerPaameldt(skjema.getMobil())) {
+		} else if (deltagerDbService.erDeltagerPaameldt(skjema.getMobil())) {
     		melding = Feilmeldinger.ALLEREDE_PAAMELDT_MLD;
     	}
 		return melding;

@@ -17,6 +17,12 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 public class InnUtloggingController {
 
+    private final DeltagerDbService deltagerDbService;
+
+    public InnUtloggingController(DeltagerDbService deltagerDbService) {
+        this.deltagerDbService = deltagerDbService;
+    }
+
 	/*
 	 * GET /innlogging - Viser innloggingsskjemaet vhja logginn-viewet.
 	 */
@@ -36,7 +42,7 @@ public class InnUtloggingController {
 	@PostMapping("/innlogging")
 	public String loggeInn(@RequestParam String mobil, @RequestParam String passord, 
 			HttpServletRequest request, RedirectAttributes ra) {
-		Deltager deltager = DeltagerDbService.finnDeltagerMedMobil(mobil);
+		Deltager deltager = deltagerDbService.finnDeltagerMedMobil(mobil);
 		if (deltager == null
 			|| !PassordService.erPassordKorrekt(passord, deltager.getHashetPassord())){
 			ra.addFlashAttribute("redirectMelding", Feilmeldinger.UGYLDIG_BRUKERNAVN_PASSORD_MLD);
