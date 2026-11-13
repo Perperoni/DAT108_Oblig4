@@ -36,7 +36,7 @@ public class ApiController {
     }
 
     @GetMapping("api/deltagere")
-    public ResponseEntity<List<DeltagerResponseDTO>> getDeltagers(HttpServletRequest request, Model model,
+    public ResponseEntity<?> getDeltagers(HttpServletRequest request, Model model,
                                                                   RedirectAttributes ra) {
         if (!apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Feil api key");
@@ -47,7 +47,7 @@ public class ApiController {
     }
 
     @GetMapping("api/deltagere/{mobil}")
-    public ResponseEntity<DeltagerResponseDTO> getDeltagerByMob (HttpServletRequest request, Model model,
+    public ResponseEntity<?> getDeltagerByMob (HttpServletRequest request, Model model,
                                                       RedirectAttributes ra, @PathVariable String mobil) {
         if (!apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("feil api key");
