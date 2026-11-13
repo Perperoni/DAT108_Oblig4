@@ -5,98 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eab48eb-cce4-4d1c-871a-6dcd6efd98f9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_5_38.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_5_38.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_7_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_17_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_17_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_3_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_4_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_18_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_18_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_25_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_25_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_11_0_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_11_0_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_11_0_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_27_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_awaitility_awaitility_4_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_9_1_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_6_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jspecify_jspecify_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_6_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_6_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_6_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_6_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_6_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_6_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_23_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_23_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_http_converter_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_jackson_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_resttestclient_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_servlet_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jackson_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jackson_test_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_test_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_runtime_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_test_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webmvc_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webmvc_test_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_thymeleaf_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_tomcat_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_validation_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_web_server_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_webmvc_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_webmvc_test_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_7_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_7_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_7_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_7_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_7_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_7_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_7_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_7_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring6_3_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tools_jackson_core_jackson_core_3_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tools_jackson_core_jackson_databind_3_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/controller/ApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/service/ApiNokkelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/service/ApiNokkelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/repository/DeltagerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/repository/DeltagerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/service/DeltagerDbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/service/DeltagerDbService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,61 +39,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000000855841122" />
-      <entry key="S2" value="1.051268244399647" />
-      <entry key="S5" value="1.5950914401148015" />
-      <entry key="S10" value="2.693834811008302" />
-      <entry key="S30" value="5.620580848494119" />
-      <entry key="S60" value="7.820644978107472" />
-      <entry key="M2" value="10.851564719052426" />
-      <entry key="M5" value="17.899283565554082" />
-      <entry key="M10" value="28.269443170620587" />
-      <entry key="M15" value="37.71607735144067" />
-      <entry key="M30" value="61.4354325861902" />
-      <entry key="H1" value="90.79100528177239" />
-      <entry key="H2" value="116.72131497924953" />
-      <entry key="H4" value="134.56242648788395" />
-      <entry key="D1" value="152.88498098117898" />
-      <entry key="W1" value="156.40209809635914" />
+      <entry key="MS100" value="2.187096762674434E-264" />
+      <entry key="MS500" value="1.853418951977852E-53" />
+      <entry key="S2" value="6.561440377610711E-14" />
+      <entry key="S5" value="5.390659256489509E-6" />
+      <entry key="S10" value="0.002556253014501515" />
+      <entry key="S30" value="0.23243894881582688" />
+      <entry key="S60" value="1.1970199688724752" />
+      <entry key="M2" value="4.356539593306954" />
+      <entry key="M5" value="14.7255415971413" />
+      <entry key="M10" value="28.01164957922317" />
+      <entry key="M15" value="39.13940959871213" />
+      <entry key="M30" value="67.24329576162164" />
+      <entry key="H1" value="105.2333967410152" />
+      <entry key="H2" value="142.1286979409298" />
+      <entry key="H4" value="169.19352596436528" />
+      <entry key="D1" value="198.29300969090036" />
+      <entry key="W1" value="204.02170014996366" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.739404205042474E-18" />
-      <entry key="MS500" value="3.428820497407218E-4" />
-      <entry key="S2" value="0.13607755287515383" />
-      <entry key="S5" value="0.4524630085431441" />
-      <entry key="S10" value="0.735466639561569" />
-      <entry key="S30" value="1.5233263425454848" />
-      <entry key="S60" value="2.4876666228073265" />
-      <entry key="M2" value="5.24123714101025" />
-      <entry key="M5" value="13.490146763900228" />
-      <entry key="M10" value="23.5984469944973" />
-      <entry key="M15" value="31.935943308569204" />
-      <entry key="M30" value="52.325329703453626" />
-      <entry key="H1" value="77.18600839524588" />
-      <entry key="H2" value="98.83906992169587" />
-      <entry key="H4" value="113.59131598390529" />
-      <entry key="D1" value="128.63487556846326" />
-      <entry key="W1" value="131.5113467130627" />
+      <entry key="MS100" value="1.0000000022931852" />
+      <entry key="MS500" value="1.0187106047596708" />
+      <entry key="S2" value="1.3698508830416096" />
+      <entry key="S5" value="1.6849438175434592" />
+      <entry key="S10" value="2.0732412799327173" />
+      <entry key="S30" value="4.708426914491302" />
+      <entry key="S60" value="8.781542916598553" />
+      <entry key="M2" value="15.59518513196771" />
+      <entry key="M5" value="29.413276520493323" />
+      <entry key="M10" value="44.76439893561124" />
+      <entry key="M15" value="57.04081638016117" />
+      <entry key="M30" value="85.58216626503193" />
+      <entry key="H1" value="121.20805436446463" />
+      <entry key="H2" value="154.3185213202924" />
+      <entry key="H4" value="178.06561394068007" />
+      <entry key="D1" value="203.2405431952943" />
+      <entry key="W1" value="208.16081705131532" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.3595356261406534E-15" />
-      <entry key="MS500" value="0.0014651473584552225" />
-      <entry key="S2" value="0.2990925312821616" />
-      <entry key="S5" value="1.346483007195991" />
-      <entry key="S10" value="2.849495078114527" />
-      <entry key="S30" value="6.761940926401399" />
-      <entry key="S60" value="10.041026905391563" />
-      <entry key="M2" value="15.878952624360457" />
-      <entry key="M5" value="31.207035838911032" />
-      <entry key="M10" value="51.70818886928555" />
-      <entry key="M15" value="69.50325938596993" />
-      <entry key="M30" value="113.63043478497416" />
-      <entry key="H1" value="167.87493643178607" />
-      <entry key="H2" value="215.49216252824914" />
-      <entry key="H4" value="248.1135154260191" />
-      <entry key="D1" value="281.5120798780985" />
-      <entry key="W1" value="287.9123040676434" />
+      <entry key="MS100" value="0.0027430563979257755" />
+      <entry key="MS500" value="0.30735971681364516" />
+      <entry key="S2" value="0.7445914585760119" />
+      <entry key="S5" value="0.9077729984079816" />
+      <entry key="S10" value="1.2607995698209153" />
+      <entry key="S30" value="4.297285324440578" />
+      <entry key="S60" value="9.462523339432225" />
+      <entry key="M2" value="19.533282187155578" />
+      <entry key="M5" value="43.81068865699438" />
+      <entry key="M10" value="72.497466468811" />
+      <entry key="M15" value="95.93018928608377" />
+      <entry key="M30" value="152.62407203752088" />
+      <entry key="H1" value="226.29074203923315" />
+      <entry key="H2" value="296.3472891537165" />
+      <entry key="H4" value="347.1999957619792" />
+      <entry key="D1" value="401.5220238495824" />
+      <entry key="W1" value="412.18082272871953" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{

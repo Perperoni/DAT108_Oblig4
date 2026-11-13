@@ -1,5 +1,6 @@
 package no.hvl.dat108.oblig4.service;
 
+import no.hvl.dat108.oblig4.dto.DeltagerPostRequestDTO;
 import no.hvl.dat108.oblig4.model.Deltager;
 import no.hvl.dat108.oblig4.repository.DeltagerRepository;
 import org.springframework.stereotype.Service;
@@ -31,5 +32,10 @@ public class DeltagerDbService {
 
     public void lagreDeltager(Deltager deltager) {
         deltagerRepository.save(deltager);
+    }
+
+    public Deltager opprett(Deltager d) {
+
+        return deltagerRepository.save(d);
     }
 }
