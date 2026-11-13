@@ -1,0 +1,80 @@
+
+@baseUrl = http://localhost:8080
+@apiKey = topsearceate
+@missingMobil = 00000000
+@oblig5TestMobil = 34343434
+
+### 1. POST ny deltager 201 Created
+
+POST {{baseUrl}}/api/deltagere
+Api-Key: {{apiKey}}
+Content-Type: application/json
+
+{
+  "mobil": "22345679",
+  "passord": "Test1234",
+  "fornavn": "Anne",
+  "etternavn": "Testsen",
+  "kjonn": "kvinne"
+}
+
+### 2. GET all Riktig API Key 200 OK
+GET {{baseUrl}}/api/deltagere
+Api-Key: {{apiKey}}
+Accept: application/json
+
+### 3. GET all Ingen key 401 Unauthorized
+GET {{baseUrl}}/api/deltagere
+
+### 4. GET follow Location from request 1 200 OK
+GET {{oblig5Location}}
+Api-Key: {{apiKey}}
+Accept: application/json
+
+### 5. GET ugyldig key 401 Unauthorized
+GET {{baseUrl}}/api/deltagere/{{oblig5TestMobil}}
+Api-Key: ugyldig-key
+
+### 6. GET ukjent mobil 404 Not Found
+GET {{baseUrl}}/api/deltagere/{{missingMobil}}
+Api-Key: {{apiKey}}
+
+### 7. POST Ingen key gyldig json 401 Unauthorized
+POST {{baseUrl}}/api/deltagere
+Content-Type: application/json
+
+{
+  "mobil": {{oblig5TestMobil}},
+  "passord": "Test1234",
+  "fornavn": "Anne",
+  "etternavn": "Testsen",
+  "kjonn": "kvinne"
+}
+
+
+### 8. POST ugyldig mobil gyldig key 400 Bad Request
+POST {{baseUrl}}/api/deltagere
+Api-Key: {{apiKey}}
+Content-Type: application/json
+
+{
+  "mobil": "123",
+  "passord": "Test1234",
+  "fornavn": "Anne",
+  "etternavn": "Testsen",
+  "kjonn": "kvinne"
+}
+
+
+### 9. POST samme mobil som request 1 409 Conflict
+POST {{baseUrl}}/api/deltagere
+Api-Key: {{apiKey}}
+Content-Type: application/json
+
+{
+  "mobil": "22345679",
+  "passord": "Test1234",
+  "fornavn": "Anne",
+  "etternavn": "Testsen",
+  "kjonn": "kvinne"
+}
