@@ -22,7 +22,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
-@Controller
+@RestController
 public class ApiController {
 
     private final DeltagerRepository deltagerRepository;
@@ -39,7 +39,7 @@ public class ApiController {
     public ResponseEntity<List<DeltagerResponseDTO>> getDeltagers(HttpServletRequest request, Model model,
                                                                   RedirectAttributes ra) {
         if (!apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Feil api key");
         }
 
         List<DeltagerResponseDTO> deltagers = deltagerRepository.findAll().stream().map(DeltagerResponseDTO::new).toList();
@@ -50,12 +50,12 @@ public class ApiController {
     public ResponseEntity<DeltagerResponseDTO> getDeltagerByMob (HttpServletRequest request, Model model,
                                                       RedirectAttributes ra, @PathVariable String mobil) {
         if (!apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("feil api key");
         }
 
         DeltagerResponseDTO deltager = deltagerRepository.findByMobil(mobil);
         if (deltager == null){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("fant ingen deltager");
         }
         return ResponseEntity.status(HttpStatus.OK).body(deltager);
     }
