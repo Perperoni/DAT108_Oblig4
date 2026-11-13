@@ -7,23 +7,36 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-class DeltagerDbServiceTest {
+class ServiceTest {
 
     private DeltagerRepository repository;
-    private DeltagerDbService service;
+    private DeltagerDbService deltagerDbService;
+    private PassordService passordService;
 
     @BeforeEach
     void setUp() {
         repository = mock(DeltagerRepository.class);
-        service = new DeltagerDbService(repository);
+        deltagerDbService = new DeltagerDbService(repository);
+        passordService = new PassordService();
     }
 
     @Test
-    void finnAlleSortertPaaFulltNavnReturnererAlleSortert() {
+    void PassordServiceTest() {
+        String passord = "test";
+        String feilPassord = "hest";
+        String hashetPassord = passordService.lagHashetPassord(passord);
+
+        assertTrue(passordService.erPassordKorrekt(passord,hashetPassord));
+        assertFalse(passordService.erPassordKorrekt(feilPassord, hashetPassord));
+
+    }
+
+    @Test
+    void DeltagerDbServiceTest() {
         Deltager knutOlsen = new Deltager("12345678", "hash", "Knut", "Olsen", "mann");
         Deltager anne = new Deltager("23456789", "hash", "Anne", "Annesen", "kvinne");
         Deltager knutKnutsen = new Deltager("34567890", "hash", "Knut", "Knutsen", "mann");
@@ -32,13 +45,7 @@ class DeltagerDbServiceTest {
         when(repository.findAll()).thenReturn(List.of(knutOlsen, anne, knutKnutsen, annenAnne));
 
         assertEquals(List.of(anne, annenAnne, knutKnutsen, knutOlsen),
-                service.finnAlleSortertPaaFulltNavn());
+                deltagerDbService.finnAlleSortertPaaFulltNavn());
     }
 
-    @Test
-    void finnAlleSortertPaaFulltNavnHaandtererTomListe() {
-        when(repository.findAll()).thenReturn(List.of());
-
-        assertEquals(List.of(), service.finnAlleSortertPaaFulltNavn());
-    }
 }

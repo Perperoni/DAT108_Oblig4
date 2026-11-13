@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eab48eb-cce4-4d1c-871a-6dcd6efd98f9" name="Changes" comment="" />
+    <list default="true" id="7eab48eb-cce4-4d1c-871a-6dcd6efd98f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/test/java/no/hvl/dat108/oblig4/service/DeltagerDbServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/test/java/no/hvl/dat108/oblig4/service/ServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="39" />
+    <option name="cachedIndexableFilesCount" value="38" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,61 +44,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.187096762674434E-264" />
-      <entry key="MS500" value="1.853418951977852E-53" />
-      <entry key="S2" value="6.561440377610711E-14" />
-      <entry key="S5" value="5.390659256489509E-6" />
-      <entry key="S10" value="0.002556253014501515" />
-      <entry key="S30" value="0.23243894881582688" />
-      <entry key="S60" value="1.1970199688724752" />
-      <entry key="M2" value="4.356539593306954" />
-      <entry key="M5" value="14.7255415971413" />
-      <entry key="M10" value="28.01164957922317" />
-      <entry key="M15" value="39.13940959871213" />
-      <entry key="M30" value="67.24329576162164" />
-      <entry key="H1" value="105.2333967410152" />
-      <entry key="H2" value="142.1286979409298" />
-      <entry key="H4" value="169.19352596436528" />
-      <entry key="D1" value="198.29300969090036" />
-      <entry key="W1" value="204.02170014996366" />
+      <entry key="MS100" value="3.773530020630729E-29" />
+      <entry key="MS500" value="2.067043241204795E-6" />
+      <entry key="S2" value="0.03791732721816988" />
+      <entry key="S5" value="0.2713141267330951" />
+      <entry key="S10" value="0.5832953009032231" />
+      <entry key="S30" value="2.5059101002624025" />
+      <entry key="S60" value="6.061701555862586" />
+      <entry key="M2" value="11.763325274256122" />
+      <entry key="M5" value="21.92302621340899" />
+      <entry key="M10" value="33.141201384489" />
+      <entry key="M15" value="43.52976112938368" />
+      <entry key="M30" value="72.50940639309961" />
+      <entry key="H1" value="115.75222729665113" />
+      <entry key="H2" value="161.2525938040651" />
+      <entry key="H4" value="196.44220858472522" />
+      <entry key="D1" value="235.74494401148897" />
+      <entry key="W1" value="243.6456678753347" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000022931852" />
-      <entry key="MS500" value="1.0187106047596708" />
-      <entry key="S2" value="1.3698508830416096" />
-      <entry key="S5" value="1.6849438175434592" />
-      <entry key="S10" value="2.0732412799327173" />
-      <entry key="S30" value="4.708426914491302" />
-      <entry key="S60" value="8.781542916598553" />
-      <entry key="M2" value="15.59518513196771" />
-      <entry key="M5" value="29.413276520493323" />
-      <entry key="M10" value="44.76439893561124" />
-      <entry key="M15" value="57.04081638016117" />
-      <entry key="M30" value="85.58216626503193" />
-      <entry key="H1" value="121.20805436446463" />
-      <entry key="H2" value="154.3185213202924" />
-      <entry key="H4" value="178.06561394068007" />
-      <entry key="D1" value="203.2405431952943" />
-      <entry key="W1" value="208.16081705131532" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000642507236386" />
+      <entry key="S2" value="1.1634683366065657" />
+      <entry key="S5" value="1.6585452034083574" />
+      <entry key="S10" value="2.4575340713501124" />
+      <entry key="S30" value="4.589846451577417" />
+      <entry key="S60" value="6.687889593586548" />
+      <entry key="M2" value="9.97429346409536" />
+      <entry key="M5" value="17.641632070105103" />
+      <entry key="M10" value="29.82028779743277" />
+      <entry key="M15" value="42.27963517964994" />
+      <entry key="M30" value="75.30912151174556" />
+      <entry key="H1" value="119.96762508114855" />
+      <entry key="H2" value="163.93584811439032" />
+      <entry key="H4" value="196.76819390353683" />
+      <entry key="D1" value="232.64660091443628" />
+      <entry key="W1" value="239.77961764140113" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0027430563979257755" />
-      <entry key="MS500" value="0.30735971681364516" />
-      <entry key="S2" value="0.7445914585760119" />
-      <entry key="S5" value="0.9077729984079816" />
-      <entry key="S10" value="1.2607995698209153" />
-      <entry key="S30" value="4.297285324440578" />
-      <entry key="S60" value="9.462523339432225" />
-      <entry key="M2" value="19.533282187155578" />
-      <entry key="M5" value="43.81068865699438" />
-      <entry key="M10" value="72.497466468811" />
-      <entry key="M15" value="95.93018928608377" />
-      <entry key="M30" value="152.62407203752088" />
-      <entry key="H1" value="226.29074203923315" />
-      <entry key="H2" value="296.3472891537165" />
-      <entry key="H4" value="347.1999957619792" />
-      <entry key="D1" value="401.5220238495824" />
-      <entry key="W1" value="412.18082272871953" />
+      <entry key="MS100" value="9.263571810875299E-6" />
+      <entry key="MS500" value="0.09859034402120904" />
+      <entry key="S2" value="0.6973318506295167" />
+      <entry key="S5" value="1.5843692399789306" />
+      <entry key="S10" value="2.7380459423398045" />
+      <entry key="S30" value="6.817438829272124" />
+      <entry key="S60" value="12.501882806588826" />
+      <entry key="M2" value="21.536903447888058" />
+      <entry key="M5" value="39.41965305035765" />
+      <entry key="M10" value="62.82534180283621" />
+      <entry key="M15" value="85.66689577662984" />
+      <entry key="M30" value="147.67007103421048" />
+      <entry key="H1" value="235.58802409010733" />
+      <entry key="H2" value="325.0920444925522" />
+      <entry key="H4" value="393.1502720153926" />
+      <entry key="D1" value="468.3792746811629" />
+      <entry key="W1" value="483.4234675585436" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -101,6 +111,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ServiceTest.PassordServiceTest.executor": "Run",
+    "JUnit.ServiceTest.executor": "Run",
     "JavaScript Debug.deltagerliste.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
@@ -127,7 +139,38 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ServiceTest">
+    <configuration name="ServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oblig4-springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat108.oblig4.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat108.oblig4.service" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat108.oblig4.service.ServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.PassordServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oblig4-springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat108.oblig4.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat108.oblig4.service" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat108.oblig4.service.ServiceTest" />
+      <option name="METHOD_NAME" value="PassordServiceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringBootApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false">
       <envs>
         <env name="DB_PASSWORD" value="pass" />
@@ -140,6 +183,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ServiceTest" />
+        <item itemvalue="JUnit.ServiceTest.PassordServiceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
