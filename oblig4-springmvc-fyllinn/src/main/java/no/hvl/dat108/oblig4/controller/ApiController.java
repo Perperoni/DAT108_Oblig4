@@ -17,7 +17,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @Controller
@@ -36,7 +38,7 @@ public class ApiController {
     @GetMapping("api/deltagere")
     public ResponseEntity<List<DeltagerResponseDTO>> getDeltagers(HttpServletRequest request, Model model,
                                                                   RedirectAttributes ra) {
-        if (apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
+        if (!apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
         }
 
@@ -47,7 +49,7 @@ public class ApiController {
     @GetMapping("api/deltagere/{mobil}")
     public ResponseEntity<DeltagerResponseDTO> getDeltagerByMob (HttpServletRequest request, Model model,
                                                       RedirectAttributes ra, @PathVariable String mobil) {
-        if (apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
+        if (!apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
         }
 
@@ -58,23 +60,26 @@ public class ApiController {
         return ResponseEntity.status(HttpStatus.OK).body(deltager);
     }
 
-    @PostMapping("api/deletagere")
-    public ResponseEntity<DeltagerResponseDTO> nyDeltager(HttpServletRequest request, Model model,
+    @PostMapping("/api/deltagere")
+    public ResponseEntity<?> nyDeltager(HttpServletRequest request, Model model,
                                                           RedirectAttributes ra, @Valid @RequestBody DeltagerPostRequestDTO dto) {
-        if (apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
+        if (!apiNokkelService.erNokkelGyldig(request.getHeader("Api-Key"))){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Feil API key");
         }
 
         String hashetPassord = PassordService.lagHashetPassord(dto.passord());
         Deltager nyDeltager = dto.lagDeltager(hashetPassord);
 
         if (deltagerDbService.erDeltagerPaameldt(dto.mobil())) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(null);
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("Mobilnummer er allerede registrert");
         }
 
         Deltager lagraDeltager = deltagerDbService.opprett(nyDeltager);
-        DeltagerResponseDTO responseDTO = new DeltagerResponseDTO(lagraDeltager);
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{mobil}")
+                .buildAndExpand(lagraDeltager.getMobil())
+                .toUri();
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
+        return ResponseEntity.created(location).body("Deltakaren er påmeld");
     }
 }
