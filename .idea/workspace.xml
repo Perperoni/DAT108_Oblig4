@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eab48eb-cce4-4d1c-871a-6dcd6efd98f9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/controller/ApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/repository/DeltagerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/repository/DeltagerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/service/DeltagerDbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/oblig4-springmvc-fyllinn/src/main/java/no/hvl/dat108/oblig4/service/DeltagerDbService.java" afterDir="false" />
-    </list>
+    <list default="true" id="7eab48eb-cce4-4d1c-871a-6dcd6efd98f9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
